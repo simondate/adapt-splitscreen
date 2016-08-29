@@ -1,0 +1,117 @@
+.sticky {
+    #splittscreen-container {
+        position: fixed!important;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+.splittscreen-active {
+    .page {
+        background-color: @background-color-inverted;
+        padding-bottom: 0%;
+    }
+    
+    #splittscreen-container {
+        background-color: white;
+
+        #splittscreen-body {
+            // width: 100%;
+            height: 100%;
+        }
+    }
+
+    // *************
+    // large version
+    // *************    
+    &.splittscreen-large {
+        .splittscreen-button-show,
+        .splittscreen-button-hide, {
+            display: none;
+        }
+
+        #splittscreen-container {
+            width: 40%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }
+        
+        .article {
+            float: left;
+            width: 60%;
+        }
+    }
+
+    // *************
+    // small version
+    // *************
+    &.splittscreen-small {
+        .splittscreen-button {
+            text-align: center;
+            border-radius: 50%;
+            position: fixed;
+            background-color: @primary-color-inverted;
+            color: @primary-color;
+            border: solid 1px @primary-color;
+            z-index: 700;
+            font-family: 'vanilla';
+            font-size: 20px;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .splittscreen-button-show {
+        }
+        .splittscreen-button-hide {
+        }
+
+        #minimap-doc {
+            width: 100%;
+            height: 100%;
+            // float: right;
+        }
+
+        #splittscreen-container {
+            z-index: 600;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+
+            #splittscreen-body {
+                width: 90%;
+                margin: 0 5%;
+                height: 100%;
+            }
+        }
+
+        .splittscreen-hide {
+            #splittscreen-container {
+                left: 100%;
+            }
+            .splittscreen-button-show {
+                display: inline-block;
+            }
+            .splittscreen-button-hide {
+                display: none;
+            }
+        }
+        
+        .splittscreen-show {
+            .splittscreen-button-show {
+                display: none;
+            }
+            .splittscreen-button-hide {
+                display: inline-block;
+            }
+        }
+    }
+}
