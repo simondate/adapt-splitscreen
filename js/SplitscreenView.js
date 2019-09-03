@@ -17,9 +17,9 @@ define(function(require) {
         },
 
         initialize: function() {
-            if (Modernizr.svg === false) {
-                return;
-            }
+            // if (Modernizr.svg === false) {
+            //     return;
+            // }
 
             this.$window = $(window);
             this.pageHeaderHeight = $('.page-header').height();
@@ -36,7 +36,7 @@ define(function(require) {
             this.setupScrollEvents();
 
             this.$window.trigger('resize');
-            // this.onDeviceResize();
+            this.onDeviceResize();
         },
 
         onSplittscreenShow: function() {
@@ -90,7 +90,7 @@ define(function(require) {
                 // if (this.svg) {
                 //     this.svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
                 // }
-            } 
+            }
             // else {
             //     if (this.svg) {
             //         this.svg.setAttribute('preserveAspectRatio', 'xMidYMin slice');
