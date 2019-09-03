@@ -1,7 +1,7 @@
 {
     "name": "adapt-splitscreen",
-    "version": "0.0.1",
-    "framework": "^2.0.0",
+    "version": "0.1.0",
+    "framework": ">=2.0.0",
     "homepage": "https://github.com/LearnChamp/adapt-splitscreen",
     "issues": "https://github.com/LearnChamp/adapt-splitscreen/issues",
     "displayName": "Split Screen",

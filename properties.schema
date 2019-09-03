@@ -17,7 +17,32 @@
           "type":"object"
         },
         "contentobject": {
-          "type":"object"
+          "type":"object",
+          "properties": {
+            "_splitscreen": {
+              "type": "object",
+              "legend": "Close",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required":true,
+                  "default": true,
+                  "title": "Enabled?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_screenWidth": {
+                  "type": "number",
+                  "required": false,
+                  "title": "Screen width",
+                  "inputType": "Number",
+                  "default": 900,
+                  "help": "Sets the minimum screenwidth fot two column layout (px)",
+                  "validators": ["number"]
+                }
+              }
+            }
+          }
         },
         "article": {
           "type":"object"
