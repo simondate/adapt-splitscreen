@@ -23,7 +23,7 @@ define(function(require) {
 
             this.$window = $(window);
             this.pageHeaderHeight = $('.page-header').height();
-            this.screenWidth = this.model.get('_splittscreen')._screenWidth || 900;
+            this.screenWidth = this.model.get('_splitscreen')._screenWidth || 900;
 
             this.listenTo(Adapt, 'remove', this.remove);
             this.listenTo(Adapt, 'device:resize', this.onDeviceResize);
