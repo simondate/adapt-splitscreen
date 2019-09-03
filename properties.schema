@@ -2,8 +2,7 @@
   "type": "object",
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "http://jsonschema.net",
-  "globals": {
-  },
+  "required": false,
   "properties":{
     "pluginLocations": {
       "type":"object",
@@ -13,7 +12,7 @@
           "properties": {
             "_splitscreen": {
               "type": "object",
-              "legend": "Close",
+              "legend": "Split Screen",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
