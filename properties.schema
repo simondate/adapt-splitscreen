@@ -1,21 +1,13 @@
 {
-  "type":"object",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
   "id": "http://jsonschema.net",
-  "required":false,
   "globals": {
   },
   "properties":{
     "pluginLocations": {
       "type":"object",
-      "required":true,
       "properties":{
-        "config": {
-          "type":"object"
-        },
-        "course": {
-          "type":"object"
-        },
         "contentobject": {
           "type":"object",
           "properties": {
@@ -43,15 +35,6 @@
               }
             }
           }
-        },
-        "article": {
-          "type":"object"
-        },
-        "block": {
-          "type":"object"
-        },
-        "component": {
-          "type":"object"
         }
       }
     }
