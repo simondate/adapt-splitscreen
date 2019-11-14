@@ -1,7 +1,7 @@
 .sticky {
     #splittscreen-container {
-        position: fixed!important;
-        top: 0;
+        position: fixed !important;
+        top: @navigation-height;
         right: 0;
     }
 }
@@ -12,7 +12,7 @@
         background-color: @background-color-inverted;
         padding-bottom: 0%;
     }
-    
+
     #splittscreen-container {
         background-color: white;
 
@@ -24,7 +24,7 @@
 
     // *************
     // large version
-    // *************    
+    // *************
     &.splittscreen-large {
         .splittscreen-button-show,
         .splittscreen-button-hide, {
@@ -37,7 +37,7 @@
             position: absolute;
             right: 0;
         }
-        
+
         .article {
             float: left;
             width: 60%;
@@ -104,7 +104,7 @@
                 display: none;
             }
         }
-        
+
         .splittscreen-show {
             .splittscreen-button-show {
                 display: none;
